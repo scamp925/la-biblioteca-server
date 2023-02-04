@@ -11,3 +11,11 @@ class Review(models.Model):
     created_on = models.DateField()
     book = models.ForeignKey(Book, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    
+    @property
+    def associated_reactions(self):
+        return self.__associated_reactions
+    
+    @associated_reactions.setter
+    def associated_reactions(self, value):
+        self.__associated_reactions = value
