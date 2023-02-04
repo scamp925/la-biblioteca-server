@@ -10,4 +10,3 @@ class BookShelf(models.Model):
     '''on_delete: When a book is trying to be deleted, a protect error will be triggered; thus, not allowing for the book to be deleted because the book is associated with a shelf. Book can be deleted after all associated shelves are deleted first.'''
     shelf = models.ForeignKey(Shelf, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    '''on_delete: When user is deleted, all associated books on user's shelves will also be removed'''
