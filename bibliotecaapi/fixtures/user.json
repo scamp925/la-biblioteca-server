@@ -1,0 +1,28 @@
+[
+  {
+    "model": "bibliotecaapi.user",
+    "pk": 1,
+    "fields": {
+        "first_name": "Carolina",
+        "last_name": "Giraldo",
+        "profile_image": "https://media.allure.com/photos/62ed31b2e109c9f860c59498/1:1/w_2000,h_2000,c_limit/karol%20g%20red%20hair.jpg",
+        "nickname": "Karol_G",
+        "created_on": "2023-01-10",
+        "active": true,
+        "uid": "grvfe1579"
+    }
+  },
+  {
+    "model": "bibliotecaapi.user",
+    "pk": 2,
+    "fields": {
+        "first_name": "Benito Antonio",
+        "last_name": "Martínez Ocasio",
+        "profile_image": "https://images.squarespace-cdn.com/content/v1/591b5715725e257ade2cc691/1628621930018-6P5FC55O941O6ZRNECOY/bb.jpg?format=1000w",
+        "nickname": "Bad_Bunny",
+        "created_on": "2023-01-15",
+        "active": true,
+        "uid": "lgofdh1987"
+    }
+  }
+]
