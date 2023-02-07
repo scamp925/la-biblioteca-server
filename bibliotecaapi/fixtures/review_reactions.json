@@ -1,0 +1,34 @@
+[
+  {
+    "model": "bibliotecaapi.reviewreaction",
+    "pk": 1,
+    "fields": {
+        "review": 7,
+        "reaction": 3
+    }
+  },
+  {
+    "model": "bibliotecaapi.reviewreaction",
+    "pk": 2,
+    "fields": {
+        "review": 4,
+        "reaction": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.reviewreaction",
+    "pk": 3,
+    "fields": {
+        "review": 4,
+        "reaction": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.reviewreaction",
+    "pk": 3,
+    "fields": {
+        "review": 1,
+        "reaction": 1
+    }
+  }
+]
