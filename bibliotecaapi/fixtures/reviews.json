@@ -1,0 +1,112 @@
+[
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 1,
+    "fields": {
+        "star_rating": 100,
+        "content": "This is a book to treasure, a new classic. I absolutely loved it.",
+        "created_on": "2008-03-01",
+        "book": 1,
+        "user": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 2,
+    "fields": {
+        "star_rating": 75,
+        "content": "Just to clarify: Yes, I did cry. I've read a lot of positive and negative reviews for this book. I can see why people wouldn't like it - I really can. Perhaps because I took a lot out of it personally, I found I enjoyed it a lot.",
+        "created_on": "2009-07-15",
+        "book": 1,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 3,
+    "fields": {
+        "star_rating": 50,
+        "content": "This book was okay. I didn't hate it or love it either way, though towards the end I realized how lukewarm I felt about the story since I would prefer to read any other book I had on hand. I appreciate the level of novelty in the world-building during the time this was first published. The friendship between the trio is cute. Hermione and Ron are fun characters and I might have enjoyed the book more if they had been the main protagonists. Downsides: I cringed at the excessive fatphobia, anti-semitism, and the turban part. I also didn't like that the final action of the book got skipped over quickly by having a fade-to-black moment and then a lengthy explanation told by one of the side characters. It felt like such an abrupt way to end the story... but TBH, I was glad to be done with it so I could move on to other books lol.",
+        "created_on": "2020-11-01",
+        "book": 2,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 4,
+    "fields": {
+        "star_rating": 100,
+        "content": "I will never ever rate this lower than 5 stars. BEAUTIFUL.",
+        "created_on": "2020-06-18",
+        "book": 2,
+        "user": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 5,
+    "fields": {
+        "star_rating": 85,
+        "content": "This was a cute middle grade book. Even though it was slow, I liked it a little more than the first book since at this point the world has already been established and now we get to see more of the characters and the setting. Ron and his family, especially the twins, are endearing. I also thought it was interesting seeing Harry’s internal struggle with whether he was truly Gryffindor or Slytherin, and the payoff later on about how it is our choices that show what we truly are. I didn’t like how the mystery was conveniently solved, the monologue of explanation from the villain at the end, and how Hermione was literally petrified throughout most of the book just so that she wouldn’t have figured everything out right away. But I’m glad to finally be done with this book so that, just like Dobby, I am free.",
+        "created_on": "2009-05-16",
+        "book": 3,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 6,
+    "fields": {
+        "star_rating": 95,
+        "content": "Thank you, Steve. You were wrong all those years ago when you said you weren't very good at writing about love and intimacy. The love story here is full of honesty and tenderness. When I got to the last couple of pages, I was crying so hard I couldn't read. 11/22/63 is a supernatural, quasi-historical, philosophical, science-fiction love story. If you're avoiding it because you think Stephen King only writes horror, please reconsider. There's no horror here, aside from a couple of mild gross-out scenes.",
+        "created_on": "2022-10-01",
+        "book": 13,
+        "user": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 7,
+    "fields": {
+        "star_rating": 30,
+        "content": "I remember reading this book in Ninth grade a few years ago. All I'm saying is that I preferred the movie... The characters and annoying and boring at the same time. Towards the end, when one of the main characters had to make a hard choice about his mentally-unstable friend, I felt a little sad but overall, I was relieved to be finished with this book.",
+        "created_on": "2010-09-05",
+        "book": 17,
+        "user": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 8,
+    "fields": {
+        "star_rating": 100,
+        "content": "This book is mind blowing. It is John Steinbeck at his sharpest. He said that every author really only has one 'book,' and that all of his books leading up to East of Eden were just practice--Eden would be his book. I could write a summary of the book, but it would be more trouble than it's worth. You will often hear it referred to as a 'modern retelling of the Genesis story of Cain and Abel' but that is too simplistic. Steinbeck takes the story of Cain and Abel and makes Cain (in the form of Cal Trask) the sympathetic character. Cal Trask does not act destructively for the sake of destruction, but he is desperately clawing for approval and love from his father, Adam, who prefers Cal's twin brother, Aron. The story isn't that pat, though--Cal and Aron really don't make their entrances as major characters until the last quarter of the 600 page novel. So, to say that this book is simply the retelling of Cain and Abel is to oversimplify the book. The main theme of the book is the desire within everyone for love, and how this desire can make people turn to destructive behavior. This book has been criticized for being too verbose, meandering, inconsistently paced, and heavy handed in its parallel with the story of Cain and Abel. Yes, it is verbose and meandering, but that's Steinbeck. It gives a full picture of the Salinas valley. It gives you insights and perspectives you might not otherwise have. If anything, Steinbeck's constant forays into unrelated sidebars give the reader a break in pace, a rest that makes the more important parts of the books feel as though they flow more smoothly. As for the parallel with Cain and Abel, it is heavy-handed. That being said, the heavy-handedness didn't bother me. Going in to the novel with the expectation of it being a retelling of Cain and Abel (at least for some of the narrative) is enough to make the obvious references to Cain and Abel seem natural. If Steinbeck had given the impression that he was trying to hide the parallel, it would have been insulting. But Steinbeck isn't trying to hide it--he makes it clear that the story of Cain and Abel are an integral part of his story. East of Eden is an amazing novel. Its strong points more than compensate for the very few shortcomings. Steinbeck is such a tremendous writer that his shortcomings become strengths. I highly recommend it.",
+        "created_on": "2021-10-18",
+        "book": 18,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 9,
+    "fields": {
+        "star_rating": 30,
+        "content": "There was one thing I really liked about The Great Gatsby. It was short.",
+        "created_on": "2001-09-01",
+        "book": 22,
+        "user": 2
+    }
+  },
+  {
+    "model": "bibliotecaapi.review",
+    "pk": 10,
+    "fields": {
+        "star_rating": 10,
+        "content": "Wow. Like so many people, I read this book because my book club chose it. Unlike so many people, I am not impressed. Not even a little bit. A lot of times when a book is rated this high, I tend to think it's me and not the book. But nope. This time I fully believe it's the book.",
+        "created_on": "2023-03-23",
+        "book": 29,
+        "user": 2
+    }
+  }
+]
