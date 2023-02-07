@@ -1,0 +1,23 @@
+[
+  {
+    "model": "bibliotecaapi.shelf",
+    "pk": 1,
+    "fields": {
+        "label": "Want to Read"
+    }
+  },
+  {
+    "model": "bibliotecaapi.shelf",
+    "pk": 2,
+    "fields": {
+        "label": "Currently Reading"
+    }
+  },
+  {
+    "model": "bibliotecaapi.shelf",
+    "pk": 3,
+    "fields": {
+        "label": "Read"
+    }
+  }
+]
