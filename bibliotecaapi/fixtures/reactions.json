@@ -1,0 +1,26 @@
+[
+  {
+    "model": "bibliotecaapi.reaction",
+    "pk": 1,
+    "fields": {
+        "label": "Raised Hands",
+        "image_url": "https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f64c.png"
+    }
+  },
+  {
+    "model": "bibliotecaapi.reaction",
+    "pk": 2,
+    "fields": {
+        "label": "Love",
+        "image_url": "https://a.slack-edge.com/production-standard-emoji-assets/14.0/apple-medium/2764-fe0f.png"
+    }
+  },
+  {
+    "model": "bibliotecaapi.reaction",
+    "pk": 3,
+    "fields": {
+        "label": "Face With Raised Eyebrow",
+        "image_url": "https://a.slack-edge.com/production-standard-emoji-assets/14.0/google-medium/1f928.png"
+    }
+  }
+]
