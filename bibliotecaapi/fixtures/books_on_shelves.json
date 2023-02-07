@@ -1,0 +1,29 @@
+[
+  {
+    "model": "bibliotecaapi.bookshelf",
+    "pk": 1,
+    "fields": {
+        "book": 1,
+        "shelf": 2,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.bookshelf",
+    "pk": 2,
+    "fields": {
+        "book": 15,
+        "shelf": 3,
+        "user": 1
+    }
+  },
+  {
+    "model": "bibliotecaapi.bookshelf",
+    "pk": 3,
+    "fields": {
+        "book": 25,
+        "shelf": 1,
+        "user": 2
+    }
+  }
+]
