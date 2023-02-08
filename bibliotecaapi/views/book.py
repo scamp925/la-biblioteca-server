@@ -32,7 +32,7 @@ class BookView(ViewSet):
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data)
     
-    @action(methods=['put'], detail=True)
+    @action(methods=['post'], detail=True)
     def add_to_shelf(self, request, pk):
       """Book request for a user to add book to a shelf"""
 
@@ -45,7 +45,36 @@ class BookView(ViewSet):
           user=user
       )
       return Response({'message': "User's book added"}, status=status.HTTP_201_CREATED)
+  
+    @action(methods=['put'], detail=True)
+    def update_shelf(self, request, pk):
+        book = Book.objects.get(pk=pk)
+        shelf = Shelf.objects.get(pk=request.data["shelf_id"])
+        user = User.objects.get(pk=request.data["user_id"])
+        bookshelf = BookShelf.objects.get(
+            book=book,
+            shelf=shelf,
+            user=user
+        )
+        
+        bookshelf.save()
+        
+        return Response({'message': "User's book's shelf has been updated"}, status=status.HTTP_204_NO_CONTENT)
     
+    @action(methods=['delete'], detail=True)
+    def remove_from_shelf(self, request, pk):
+        book = Book.objects.get(pk=pk)
+        shelf = Shelf.objects.get(pk=request.data["shelf_id"])
+        user = User.objects.get(pk=request.data["user_id"])
+        bookshelf = BookShelf.objects.get(
+            book=book,
+            shelf=shelf,
+            user=user
+        )
+        bookshelf.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
+        
+
 class BookSerializer(serializers.ModelSerializer):
     '''JSON serializer for books'''
     class Meta:
