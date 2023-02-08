@@ -2,7 +2,8 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from bibliotecaapi.models import Book
+from rest_framework.decorators import action
+from bibliotecaapi.models import Book, Shelf, User, BookShelf
 
 class BookView(ViewSet):
     '''The Gallery's Book View'''
@@ -30,6 +31,20 @@ class BookView(ViewSet):
             
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data)
+    
+    @action(methods=['put'], detail=True)
+    def add_to_shelf(self, request, pk):
+      """Book request for a user to add book to a shelf"""
+
+      book = Book.objects.get(pk=pk)
+      shelf = Shelf.objects.get(pk=request.data["shelf_id"])
+      user = User.objects.get(pk=request.data["user_id"])
+      BookShelf.objects.create(
+          book=book,
+          shelf=shelf,
+          user=user
+      )
+      return Response({'message': "User's book added"}, status=status.HTTP_201_CREATED)
     
 class BookSerializer(serializers.ModelSerializer):
     '''JSON serializer for books'''
