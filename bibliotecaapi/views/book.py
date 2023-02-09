@@ -78,12 +78,10 @@ class BookView(ViewSet):
     @action(methods=['put'], detail=True)
     def update_shelf(self, request, pk):
         book = Book.objects.get(pk=pk)
-        user = User.objects.get(pk=request.data["user_id"])
+        user = request.query_params.get('user', None)
         get_bookshelves = BookShelf.objects.all()
         bookshelf = get_bookshelves.get(book=book, user=user)
-        print("What is this", bookshelf)
 
-        
         bookshelf.shelf_id = request.data["shelf_id"]
         
         bookshelf.save()
