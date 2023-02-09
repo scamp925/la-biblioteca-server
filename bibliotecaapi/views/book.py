@@ -15,6 +15,20 @@ class BookView(ViewSet):
         """
         try:
             book = Book.objects.get(pk=pk)
+            
+            user = request.query_params.get('user', None)
+            
+            find_bookshelf = BookShelf.objects.filter(book=book.id, user=user)
+            book_shelf = []
+            
+            for book_shelf_obj in find_bookshelf:
+                try:
+                    shelf = Shelf.objects.get(id=book_shelf_obj.shelf_id)
+                    book_shelf.append(shelf.label)
+                except:
+                    pass
+            
+            book.book_shelf = book_shelf
 
             serializer = BookSerializer(book)
             return Response(serializer.data)
@@ -28,6 +42,21 @@ class BookView(ViewSet):
             Response -- JSON serialized list of books
         """
         books = Book.objects.all()
+        
+        user = request.query_params.get('user', None)
+        
+        for book in books:
+            find_bookshelf = BookShelf.objects.filter(book=book.id, user=user)
+            book_shelf = []
+            
+            for book_shelf_obj in find_bookshelf:
+                try:
+                    shelf = Shelf.objects.get(id=book_shelf_obj.shelf_id)
+                    book_shelf.append(shelf.label)
+                except:
+                    pass
+            
+            book.book_shelf = book_shelf
             
         serializer = BookSerializer(books, many=True)
         return Response(serializer.data)
@@ -51,7 +80,7 @@ class BookView(ViewSet):
         book = Book.objects.get(pk=pk)
         user = User.objects.get(pk=request.data["user_id"])
         get_bookshelves = BookShelf.objects.all()
-        bookshelf = get_bookshelves.get(book = book, user = user)
+        bookshelf = get_bookshelves.get(book=book, user=user)
         print("What is this", bookshelf)
 
         
