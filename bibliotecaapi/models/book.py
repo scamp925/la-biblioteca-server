@@ -1,7 +1,6 @@
 '''Imports for Book Model'''
 
 from django.db import models
-from .shelf import Shelf
 
 class Book(models.Model):
     '''Book Class'''
