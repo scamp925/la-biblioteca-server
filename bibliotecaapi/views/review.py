@@ -29,9 +29,9 @@ class ReviewView(ViewSet):
         reviews = Review.objects.all()
         
         
-        reviews_of_user = request.query_params.get('user', None)
-        if reviews_of_user is not None:
-            reviews = reviews.filter(customer_id=reviews_of_user)
+        reviews_of_book = request.query_params.get('book', None)
+        if reviews_of_book is not None:
+            reviews = reviews.filter(book_id=reviews_of_book)
             
         serializer = ReviewSerializer(reviews, many=True)
         
