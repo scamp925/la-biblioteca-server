@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bibliotecaapi.views import check_user, register_user, BookView, ReviewView
+from bibliotecaapi.views import check_user, register_user, BookView, ReviewView, ReactionView
 from django.conf.urls import include
 from rest_framework import routers
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'books', BookView, 'book')
 router.register(r'reviews', ReviewView, 'review')
+router.register(r'reactions', ReactionView, 'reaction')
 
 urlpatterns = [
     path('register', register_user),
