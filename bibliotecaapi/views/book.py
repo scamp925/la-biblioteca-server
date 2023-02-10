@@ -19,12 +19,12 @@ class BookView(ViewSet):
             user = request.query_params.get('user', None)
             
             find_bookshelf = BookShelf.objects.filter(book=book.id, user=user)
-            book_shelf = []
+            book_shelf = ""
             
             for book_shelf_obj in find_bookshelf:
                 try:
                     shelf = Shelf.objects.get(id=book_shelf_obj.shelf_id)
-                    book_shelf.append(shelf.label)
+                    book_shelf = shelf.label
                 except:
                     pass
             
@@ -47,12 +47,12 @@ class BookView(ViewSet):
         
         for book in books:
             find_bookshelf = BookShelf.objects.filter(book=book.id, user=user)
-            book_shelf = []
+            book_shelf = ""
             
             for book_shelf_obj in find_bookshelf:
                 try:
                     shelf = Shelf.objects.get(id=book_shelf_obj.shelf_id)
-                    book_shelf.append(shelf.label)
+                    book_shelf = shelf.label
                 except:
                     pass
             
