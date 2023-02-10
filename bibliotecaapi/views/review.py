@@ -49,6 +49,8 @@ class ReviewView(ViewSet):
                     pass
                   
             review.associated_reactions = associated_reactions
+            review.reaction_clicked = len(associated_reactions) > 0
+            review.reaction_count = len(associated_reactions)
             
         serializer = ReviewSerializer(reviews, many=True)
         
@@ -97,18 +99,6 @@ class ReviewView(ViewSet):
         
         return Response(None, status=status.HTTP_204_NO_CONTENT)
     
-    @action(methods=['get'], detail=True)
-    def update_shelf(self, request, pk):
-        book = Book.objects.get(pk=pk)
-        user = request.query_params.get('user', None)
-        get_bookshelves = BookShelf.objects.all()
-        bookshelf = get_bookshelves.get(book=book, user=user)
-
-        bookshelf.shelf_id = request.data["shelf_id"]
-        
-        bookshelf.save()
-        return Response({'message': "User's book's shelf has been updated"}, status=status.HTTP_204_NO_CONTENT)
-    
     @action(methods=['post'], detail=True)
     def add_reaction(self, request, pk):
         """Review request for a user to add a reaction to review"""
@@ -135,5 +125,5 @@ class ReviewSerializer(serializers.ModelSerializer):
     '''JSON serializer for reviews'''
     class Meta:
         model = Review
-        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user', 'associated_reactions')
+        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user', 'associated_reactions', 'reaction_clicked', 'reaction_count')
         depth = 1
