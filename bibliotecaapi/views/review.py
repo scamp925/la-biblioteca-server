@@ -2,6 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
+from rest_framework.decorators import action
 from bibliotecaapi.models import Review, Book, User, ReviewReaction, Reaction
 
 class ReviewView(ViewSet):
@@ -95,7 +96,41 @@ class ReviewView(ViewSet):
         review.delete()
         
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
+    @action(methods=['get'], detail=True)
+    def update_shelf(self, request, pk):
+        book = Book.objects.get(pk=pk)
+        user = request.query_params.get('user', None)
+        get_bookshelves = BookShelf.objects.all()
+        bookshelf = get_bookshelves.get(book=book, user=user)
+
+        bookshelf.shelf_id = request.data["shelf_id"]
         
+        bookshelf.save()
+        return Response({'message': "User's book's shelf has been updated"}, status=status.HTTP_204_NO_CONTENT)
+    
+    @action(methods=['post'], detail=True)
+    def add_reaction(self, request, pk):
+        """Review request for a user to add a reaction to review"""
+        review = Review.objects.get(pk=pk)
+        reaction = Reaction.objects.get(pk=request.data["reaction_id"])
+        ReviewReaction.objects.create(
+            review=review,
+            reaction=reaction
+        )
+        return Response({'message': "User's reaction added"}, status=status.HTTP_201_CREATED)
+    
+    @action(methods=['delete'], detail=True)
+    def remove_reaction(self, request, pk):
+        review = Review.objects.get(pk=pk)
+        reaction = Reaction.objects.get(pk=request.data["reaction_id"])
+        review_reaction = ReviewReaction.objects.get(
+            review=review,
+            reaction=reaction
+        )
+        
+        review_reaction.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 class ReviewSerializer(serializers.ModelSerializer):
     '''JSON serializer for reviews'''
     class Meta:
