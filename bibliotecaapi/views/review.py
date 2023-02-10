@@ -45,7 +45,7 @@ class ReviewView(ViewSet):
         """
         
         book = Book.objects.get(pk=request.data['book_id'])
-        user = User.objects.get(pk=request.data['customer_id'])
+        user = User.objects.get(pk=request.data['user_id'])
         
         review = Review.objects.create(
             star_rating=request.data['star_rating'],
