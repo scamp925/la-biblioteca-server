@@ -6,10 +6,10 @@ from rest_framework.decorators import action
 from bibliotecaapi.models import Book, Shelf, User, BookShelf
 
 class BookView(ViewSet):
-    '''The Gallery's Book View'''
+    '''La Biblioteca's Book View'''
 
     def retrieve(self, request, pk):
-        """Handle GET requests from single book
+        """Handle GET requests for single book
         Returns:
             Response -- JSON serialized book
         """

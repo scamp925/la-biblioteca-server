@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from bibliotecaapi.models import Review, Book, User
+from bibliotecaapi.models import Review, Book, User, ReviewReaction, Reaction
 
 class ReviewView(ViewSet):
     '''La Biblioteca's review view'''
@@ -28,10 +28,26 @@ class ReviewView(ViewSet):
         """
         reviews = Review.objects.all()
         
-        
         reviews_of_book = request.query_params.get('book', None)
         if reviews_of_book is not None:
             reviews = reviews.filter(book_id=reviews_of_book)
+        
+        for review in reviews:
+            find_review_reactions = ReviewReaction.objects.filter(review=review.id)
+            associated_reactions = []
+            
+            for review_reaction_obj in find_review_reactions:
+                reaction_dict={}
+                try:
+                    reaction = Reaction.objects.get(id=review_reaction_obj.reaction_id)
+                    reaction_dict['id']=reaction.id
+                    reaction_dict['label']=reaction.label
+                    reaction_dict['image_url']=reaction.image_url
+                    associated_reactions.append(reaction_dict)
+                except:
+                    pass
+                  
+            review.associated_reactions = associated_reactions
             
         serializer = ReviewSerializer(reviews, many=True)
         
