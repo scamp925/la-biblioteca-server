@@ -40,17 +40,17 @@ class ReviewView(ViewSet):
             for review_reaction_obj in find_review_reactions:
                 reaction_dict={}
                 try:
-                    reaction = Reaction.objects.get(id=review_reaction_obj.reaction_id)
+                    reaction = Reaction.objects.get(id=review_reaction_obj.reaction_id, review = review_reaction_obj.id)
                     reaction_dict['id']=reaction.id
                     reaction_dict['label']=reaction.label
                     reaction_dict['image_url']=reaction.image_url
-                    associated_reactions.append(reaction_dict)
+                    # reaction_dict['reaction_clicked']=len(reaction.reaction_clicked) > 0
+                    # reaction_dict['reaction_count']=len(reaction.reaction_count)
+                    # associated_reactions.append(reaction_dict)
                 except:
                     pass
                   
             review.associated_reactions = associated_reactions
-            review.reaction_clicked = len(associated_reactions) > 0
-            review.reaction_count = len(associated_reactions)
             
         serializer = ReviewSerializer(reviews, many=True)
         
@@ -104,9 +104,11 @@ class ReviewView(ViewSet):
         """Review request for a user to add a reaction to review"""
         review = Review.objects.get(pk=pk)
         reaction = Reaction.objects.get(pk=request.data["reaction_id"])
+        user = User.objects.get(pk=request.data["user_id"])
         ReviewReaction.objects.create(
             review=review,
-            reaction=reaction
+            reaction=reaction,
+            user=user
         )
         return Response({'message': "User's reaction added"}, status=status.HTTP_201_CREATED)
     
@@ -114,16 +116,17 @@ class ReviewView(ViewSet):
     def remove_reaction(self, request, pk):
         review = Review.objects.get(pk=pk)
         reaction = Reaction.objects.get(pk=request.data["reaction_id"])
+        user = User.objects.get(pk=request.data["user_id"])
         review_reaction = ReviewReaction.objects.get(
             review=review,
-            reaction=reaction
+            reaction=reaction,
+            user=user
         )
-        
         review_reaction.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 class ReviewSerializer(serializers.ModelSerializer):
     '''JSON serializer for reviews'''
     class Meta:
         model = Review
-        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user', 'associated_reactions', 'reaction_clicked', 'reaction_count')
+        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user', 'associated_reactions')
         depth = 1
