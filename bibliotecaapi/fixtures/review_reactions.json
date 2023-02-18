@@ -4,7 +4,8 @@
     "pk": 1,
     "fields": {
         "review": 7,
-        "reaction": 3
+        "reaction": 3,
+        "user": 1
     }
   },
   {
@@ -12,15 +13,8 @@
     "pk": 2,
     "fields": {
         "review": 4,
-        "reaction": 1
-    }
-  },
-  {
-    "model": "bibliotecaapi.reviewreaction",
-    "pk": 3,
-    "fields": {
-        "review": 4,
-        "reaction": 2
+        "reaction": 1,
+        "user": 1
     }
   },
   {
@@ -28,7 +22,8 @@
     "pk": 3,
     "fields": {
         "review": 1,
-        "reaction": 1
+        "reaction": 1,
+        "user": 1
     }
   }
 ]
