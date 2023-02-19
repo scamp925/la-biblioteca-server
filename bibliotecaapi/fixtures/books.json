@@ -358,5 +358,125 @@
         "length": 325,
         "first_published": "2019-02-25"
     }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 31,
+    "fields": {
+        "title": "The Witch of Tin Mountain",
+        "author": "Paulette Kennedy",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655473657i/60864419.jpg",
+        "description": "In Depression-era Arkansas, something wicked has come to a haunted mountain town in a novel of uncanny suspense by the author of Parting the Veil. Blood and power bind three generations of women in the Ozark Mountains. So does an evil that’s followed them across the decades. 1931. Gracelynn Doherty lives peacefully on Tin Mountain, helping her adoptive granny work her cures. Despite whispers that the women are witches, the superstitious locals still seek them out, whether they suffer from arthritis or a broken heart. But when evangelist Josiah Bellflower comes to town touting miracle healing, full bellies, and prosperity, his revivals soon hold Tin Mountain in thrall—and Granny in abject fear. Granny recognizes Josiah. Fifty years ago, in a dark and desperate moment, she made a terrible promise. Now Josiah, an enemy, has returned to collect his due. As Granny sickens and the drought-ridden countryside falls under a curse, Gracelynn must choose: flee Tin Mountain and the only family she knows or confront the vengeful preacher whose unholy mission is to destroy her.",
+        "length": 328,
+        "first_published": "2023-02-01"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 32,
+    "fields": {
+        "title": "I Am Number Four",
+        "author": "Pittacus Lore",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1305807140i/7747374.jpg",
+        "description": "Nine of us came here. We look like you. We talk like you. We live among you. But we are not you. We can do things you dream of doing. We have powers you dream of having. We are stronger and faster than anything you have ever seen. We are the superheroes you worship in movies and comic books--but we are real. Our plan was to grow, and train, and become strong, and become one, and fight them. But they found us and started hunting us first. Now all of us are running. Spending our lives in shadows, in places where no one would look, blending in. We have lived among you without you knowing. But they know. They caught Number One in Malaysia. Number Two in England. And Number Three in Kenya. They killed them all. I am Number Four. I am next.",
+        "length": 440,
+        "first_published": "2010-08-03"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 33,
+    "fields": {
+        "title": "The Bad Beginning",
+        "author": "Lemony Snickets",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1436737029i/78411.jpg",
+        "description": "Dear Reader, I'm sorry to say that the book you are holding in your hands is extremely unpleasant. It tells an unhappy tale about three very unlucky children. Even though they are charming and clever, the Baudelaire siblings lead lives filled with misery and woe. From the very first page of this book when the children are at the beach and receive terrible news, continuing on through the entire story, disaster lurks at their heels. One might say they are magnets for misfortune. In this short book alone, the three youngsters encounter a greedy and repulsive villain, itchy clothing, a disastrous fire, a plot to steal their fortune, and cold porridge for breakfast. It is my sad duty to write down these unpleasant tales, but there is nothing stopping you from putting this book down at once and reading something happy, if you prefer that sort of thing. With all due respect, Lemony Snicket",
+        "length": 176,
+        "first_published": "1999-08-25"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 34,
+    "fields": {
+        "title": "The BFG",
+        "author": "Roald Dahl",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327872673i/6319.jpg",
+        "description": "Captured by a giant! The BFG is no ordinary bone-crunching giant. He is far too nice and jumbly. It's lucky for Sophie that he is. Had she been carried off in the middle of the night by the Bloodbottler, the Fleshlumpeater, the Bonecruncher, or any of the other giants-rather than the BFG-she would have soon become breakfast. When Sophie hears that they are flush-bunking off in England to swollomp a few nice little chiddlers, she decides she must stop them once and for all. And the BFG is going to help her!",
+        "length": 199,
+        "first_published": "1982-11-01"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 35,
+    "fields": {
+        "title": "The Future of Work: Compulsory",
+        "author": "Martha Wells",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664437391i/62820820.jpg",
+        "description": "'My risk-assessment module predicts a 53 percent chance of a human-on-human massacre before the end of the contract.' A short story published in Wired magazine as part of a series 'The Future of Work' on December 17, 2018.",
+        "length": 2,
+        "first_published": "2018-12-17"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 36,
+    "fields": {
+        "title": "Attack on Titan, Vol. 1",
+        "author": "Hajime Isayama",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1432712438i/13154150.jpg",
+        "description": "The Desperate Battle Begins! For the past century, what's left of mankind has hidden in a giant, three-walled city, trapped in fear of the bizarre, giant humanoids known as the Titans. Little is known about where they came from or why they are bent on consuming humankind, but the sudden appearance of an enormous Titan is about to change everything...",
+        "length": 193,
+        "first_published": "2009-09-09"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 37,
+    "fields": {
+        "title": "The Importance of Being Earnest",
+        "author": "Oscar Wilde",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1298438452i/92303.jpg",
+        "description": "Oscar Wilde's madcap farce about mistaken identities, secret engagements, and lovers entanglements still delights readers more than a century after its 1895 publication and premiere performance. The rapid-fire wit and eccentric characters of The Importance of Being Earnest have made it a mainstay of the high school curriculum for decades. Cecily Cardew and Gwendolen Fairfax are both in love with the same mythical suitor. Jack Worthing has wooed Gwendolen as Ernest while Algernon has also posed as Ernest to win the heart of Jack's ward, Cecily. When all four arrive at Jack's country home on the same weekend the 'rivals' to fight for Ernest's undivided attention and the 'Ernests' to claim their beloveds pandemonium breaks loose. Only a senile nursemaid and an old, discarded hand-bag can save the day! This Prestwick House Literary Touchstone Edition includes a glossary and reader's notes to help the modern reader appreciate Wilde's wry wit and elaborate plot twists.",
+        "length": 76,
+        "first_published": "1895-02-14"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 38,
+    "fields": {
+        "title": "A Midsummer Night's Dream",
+        "author": "William Shakespeare",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327874534i/1622.jpg",
+        "description": "Shakespeare's intertwined love polygons begin to get complicated from the start--Demetrius and Lysander both want Hermia but she only has eyes for Lysander. Bad news is, Hermia's father wants Demetrius for a son-in-law. On the outside is Helena, whose unreturned love burns hot for Demetrius. Hermia and Lysander plan to flee from the city under cover of darkness but are pursued by an enraged Demetrius (who is himself pursued by an enraptured Helena). In the forest, unbeknownst to the mortals, Oberon and Titania (King and Queen of the faeries) are having a spat over a servant boy. The plot twists up when Oberon's head mischief-maker, Puck, runs loose with a flower which causes people to fall in love with the first thing they see upon waking. Throw in a group of labourers preparing a play for the Duke's wedding (one of whom is given a donkey's head and Titania for a lover by Puck) and the complications become fantastically funny.",
+        "length": 240,
+        "first_published": "1595-01-01"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 39,
+    "fields": {
+        "title": "If You Tell: a True Story of Murder, Family Secrets, and the Unbreakable Bond of Sisterhood",
+        "author": "Gregg Olsen",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1556171767i/45299992.jpg",
+        "description": "A True Story of Murder, Family Secrets, and the Unbreakable Bond of Sisterhood. After more than a decade, when sisters Nikki, Sami, and Tori Knotek hear the word mom, it claws like an eagle’s talons, triggering memories that have been their secret since childhood. Until now. For years, behind the closed doors of their farmhouse in Raymond, Washington, their sadistic mother, Shelly, subjected her girls to unimaginable abuse, degradation, torture, and psychic terrors. Through it all, Nikki, Sami, and Tori developed a defiant bond that made them far less vulnerable than Shelly imagined. Even as others were drawn into their mother’s dark and perverse web, the sisters found the strength and courage to escape an escalating nightmare that culminated in multiple murders.",
+        "length": 431,
+        "first_published": "2019-12-01"
+    }
+  },
+  {
+    "model": "bibliotecaapi.book",
+    "pk": 40,
+    "fields": {
+        "title": "The Diary of a Young Girl",
+        "author": "Anne Frank",
+        "cover_image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1560816565i/48855.jpg",
+        "description": "Discovered in the attic in which she spent the last years of her life, Anne Frank’s remarkable diary has become a world classic—a powerful reminder of the horrors of war and an eloquent testament to the human spirit. In 1942, with the Nazis occupying Holland, a thirteen-year-old Jewish girl and her family fled their home in Amsterdam and went into hiding. For the next two years, until their whereabouts were betrayed to the Gestapo, the Franks and another family lived cloistered in the “Secret Annexe” of an old office building. Cut off from the outside world, they faced hunger, boredom, the constant cruelties of living in confined quarters, and the ever-present threat of discovery and death. In her diary Anne Frank recorded vivid impressions of her experiences during this period. By turns thoughtful, moving, and surprisingly humorous, her account offers a fascinating commentary on human courage and frailty and a compelling self-portrait of a sensitive and spirited young woman whose promise was tragically cut short.",
+        "length": 283,
+        "first_published": "1947-06-25"
+    }
   }
 ]

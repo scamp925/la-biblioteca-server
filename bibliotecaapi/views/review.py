@@ -32,25 +32,6 @@ class ReviewView(ViewSet):
         reviews_of_book = request.query_params.get('book', None)
         if reviews_of_book is not None:
             reviews = reviews.filter(book_id=reviews_of_book)
-        
-        for review in reviews:
-            find_review_reactions = ReviewReaction.objects.filter(review=review.id)
-            associated_reactions = []
-            
-            for review_reaction_obj in find_review_reactions:
-                reaction_dict={}
-                try:
-                    reaction = Reaction.objects.get(id=review_reaction_obj.reaction_id, review = review_reaction_obj.id)
-                    reaction_dict['id']=reaction.id
-                    reaction_dict['label']=reaction.label
-                    reaction_dict['image_url']=reaction.image_url
-                    # reaction_dict['reaction_clicked']=len(reaction.reaction_clicked) > 0
-                    # reaction_dict['reaction_count']=len(reaction.reaction_count)
-                    # associated_reactions.append(reaction_dict)
-                except:
-                    pass
-                  
-            review.associated_reactions = associated_reactions
             
         serializer = ReviewSerializer(reviews, many=True)
         
@@ -128,5 +109,5 @@ class ReviewSerializer(serializers.ModelSerializer):
     '''JSON serializer for reviews'''
     class Meta:
         model = Review
-        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user', 'associated_reactions')
+        fields = ('id', 'star_rating', 'content', 'created_on', 'book', 'user')
         depth = 1
