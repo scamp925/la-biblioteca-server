@@ -6,22 +6,6 @@ from bibliotecaapi.models import Reaction, ReviewReaction
 
 class ReactionView(ViewSet):
     '''La Biblioteca's Reaction View'''
-    def retrieve(self, request, pk):
-        """Handle GET requests from single reaction
-        Returns:
-            Response -- JSON serialized reaction
-        """
-        try:
-            review_id = request.query_params.get('review', None)
-            
-            reaction = Reaction.objects.get(pk=pk)
-            reaction.reaction_clicked = len(ReviewReaction.objects.filter(review_id = review_id, reaction_id = reaction.id)) > 0
-            reaction.reaction_count = len(ReviewReaction.objects.filter(review_id = review_id, reaction_id = reaction.id))
-            
-            serializer = ReactionSerializer(reaction)
-            return Response(serializer.data)
-        except Reaction.DoesNotExist as ex:
-            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
         
     def list(self, request):
         """Handle GET requests to get all reactions
