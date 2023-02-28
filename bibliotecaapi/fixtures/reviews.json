@@ -14,7 +14,7 @@
     "model": "bibliotecaapi.review",
     "pk": 2,
     "fields": {
-        "star_rating": 75,
+        "star_rating": 70,
         "content": "Just to clarify: Yes, I did cry. I've read a lot of positive and negative reviews for this book. I can see why people wouldn't like it - I really can. Perhaps because I took a lot out of it personally, I found I enjoyed it a lot.",
         "created_on": "2009-07-15",
         "book": 1,
@@ -47,7 +47,7 @@
     "model": "bibliotecaapi.review",
     "pk": 5,
     "fields": {
-        "star_rating": 85,
+        "star_rating": 90,
         "content": "This was a cute middle grade book. Even though it was slow, I liked it a little more than the first book since at this point the world has already been established and now we get to see more of the characters and the setting. Ron and his family, especially the twins, are endearing. I also thought it was interesting seeing Harry’s internal struggle with whether he was truly Gryffindor or Slytherin, and the payoff later on about how it is our choices that show what we truly are. I didn’t like how the mystery was conveniently solved, the monologue of explanation from the villain at the end, and how Hermione was literally petrified throughout most of the book just so that she wouldn’t have figured everything out right away. But I’m glad to finally be done with this book so that, just like Dobby, I am free.",
         "created_on": "2009-05-16",
         "book": 3,
@@ -58,7 +58,7 @@
     "model": "bibliotecaapi.review",
     "pk": 6,
     "fields": {
-        "star_rating": 95,
+        "star_rating": 90,
         "content": "Thank you, Steve. You were wrong all those years ago when you said you weren't very good at writing about love and intimacy. The love story here is full of honesty and tenderness. When I got to the last couple of pages, I was crying so hard I couldn't read. 11/22/63 is a supernatural, quasi-historical, philosophical, science-fiction love story. If you're avoiding it because you think Stephen King only writes horror, please reconsider. There's no horror here, aside from a couple of mild gross-out scenes.",
         "created_on": "2022-10-01",
         "book": 13,
