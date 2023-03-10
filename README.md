@@ -13,13 +13,32 @@
 - [Tech Stacks for La Biblioteca](#tech-stacks)
 
 ## Project Overview
-Welcome to my full stack capstone project for Nashville Software School.
+Welcome to my full stack capstone project for Nashville Software School!!
 
 La Biblioteca is my version of one of my favorite websites, GoodReads. I enjoy so much about GoodReads, but, for me, there's one thing missing: the ability to rate finished books with full and half star ratings. For La Biblioteca users, the restraint of only rating books with full stars is gone, because let's be honest, some books are 4.5 stars and not 5 stars nor are they 4 stars. Now, fair ratings are giving AND La Biblioteca users still enjoy GoodReads features like placing books onto "Want to Read", "Currently Reading", and "Read" shelves, leaving a review of a read book, perusing other user's reviews, reacting to reviews and using the search bar to find either a book or an author.
 
 [Scroll to top](#la-biblioteca-server-side)
 
 ## MVP Features
+
+Single Book View Page
+* Book's details including title, author, book cover, description, book's page count, and first publica​tion date
+* "Add to My Books" button
+  * Once book is on a user's shelf:
+    * The text of same button renders "Move to Another Shelf"
+    * A helpful message renders above to button to let the user know which shelf the book is currently on
+* "Rate this Book" button
+  * Button does not render UNTIL user has place book on "Read" shelf.
+  * If the book has been rated by the user, the text of same button will render "Edit Your Review"
+* Community Reviews
+  * All reviews and star ratings of the book from users render here
+  * Logged in user can add emoji reactions to reviews
+  * Each review that has a reaction, also has a count of how many reactions have been added.
+
+Search bar
+* Search by book title
+* Search author to get a list of their books
+* Located on the homepage once logged in
 
 [Scroll to top](#la-biblioteca-server-side)
 ## Stretch Features
@@ -53,7 +72,8 @@ python manage.py migrate
 ```
 5. Seed the Database
 
-In your terminal, run following commands one at a time
+    *In your terminal, run following commands one at a time*
+
 ``` bash
 python manage.py loaddata users
 ```
@@ -90,6 +110,13 @@ python manage.py runserver
 [Scroll to top](#la-biblioteca-server-side)
 
 ## Planning
+
+#### La Biblioteca's MVP Wireframe
+[Link to Wireframe](https://www.figma.com/file/oncaUqtr0mQdBfu6hlQipX/La-Biblioteca-MVP?node-id=0%3A1&t=soWRyWsgYsPn8Ejm-1)
+
+#### La Biblioteca's MVP ERD
+![image](https://user-images.githubusercontent.com/98675776/224432440-3f8e8266-5941-46dc-871d-b2cc374fadc6.png)
+
 
 [Scroll to top](#la-biblioteca-server-side)
 ## Tech Stacks
