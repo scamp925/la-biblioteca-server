@@ -80,7 +80,7 @@ To Implement:
 
 [Scroll to top](#la-biblioteca-server-side)
 ## Try La Biblioteca Out
-You've found my server side repo. Yahoo! You can check out my client side repo [here](https://github.com/scamp925/la-biblioteca-client). Instructions on how to get the frontend on your local machine can be found in the repo's ReadMe.
+*You've found my server side repo. Yahoo! You can check out my client side repo [here](https://github.com/scamp925/la-biblioteca-client). Instructions on how to get the frontend on your local machine can be found in the repo's ReadMe.*
 
 ### How to run backend locally
 
