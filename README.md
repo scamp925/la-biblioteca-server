@@ -28,12 +28,35 @@ Single Book View Page
     * The text of same button renders "Move to Another Shelf"
     * A helpful message renders above to button to let the user know which shelf the book is currently on
 * "Rate this Book" button
-  * Button does not render UNTIL user has place book on "Read" shelf.
+  * Button does not render UNTIL user has place book on "Read" shelf
   * If the book has been rated by the user, the text of same button will render "Edit Your Review"
 * Community Reviews
   * All reviews and star ratings of the book from users render here
   * Logged in user can add emoji reactions to reviews
-  * Each review that has a reaction, also has a count of how many reactions have been added.
+  * Each review that has a reaction, also has a count of how many reactions have been added
+  * User can edit or delete ONLY their own review
+
+Bookshelf Form
+
+* Book details of the book being put on a shelf
+* Radio buttons for each of the three bookshelf options
+* Same form to add and edit information
+* Once a book has been placed on a bookshelf, a user can click "Remove from My Books" button to remove the book from their list of books
+
+Review Form
+
+* Book details of the book being reviewed/rated
+* Implemented React Simple Star Rating into my project to allow users to rate a book with either full or half stars. Click [here](https://www.npmjs.com/package/react-simple-star-rating) to learn more
+* Large textbox for users to leave a review
+* Same form to add and edit information
+
+My Books
+
+* Using the same Next.js dynamic route file to display individual shelves. Within the file, I wrote condition logic to determine what will be displayed depending on information from how the user is interacting with the UI specifically a dropdown in the navbar.
+* All books marked "Want to Read" by user will render on a single page
+* All books marked "Currently Reading" by user will render on a single page
+* All books marked "Read" by user will render on a single page
+* A message will render on the page notifying the user that there are no books on the shelf if that is in fact true per the database.
 
 Search bar
 * Search by book title
@@ -42,6 +65,16 @@ Search bar
 
 [Scroll to top](#la-biblioteca-server-side)
 ## Stretch Features
+
+Completed:
+
+* CSS styling for entire application
+
+* Average star rating of a single book displayed on the single book view
+
+To Implement:
+
+* Yearly Book Challenge: Allow user to set the number of books they want to complete within a year's time
 
 [Scroll to top](#la-biblioteca-server-side)
 ## Try La Biblioteca Out
