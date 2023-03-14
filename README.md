@@ -88,13 +88,16 @@ To Implement:
 ``` bash
 git clone git@github.com:scamp925/la-biblioteca-server.git
 ```
-2. Set up vitrual environment
+2. Move into Directory
 ``` bash
-pipenv shell
+cd la-biblioteca-server
 ```
-3. Install Dependencies
+2. Install Packages & Setup Virtual Environment
 ``` bash
-pip install -r requirements.txt
+ pipenv install
+```
+``` bash
+ pipenv shell
 ```
 
 4. Make Migrations
