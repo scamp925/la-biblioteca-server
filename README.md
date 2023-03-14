@@ -4,6 +4,8 @@
 
 [Walkthrough Video with ME for La Biblioteca (5 mins)](https://www.loom.com/share/a18b70cc76444b25a73f45a6afb99fd0)
 
+![La-Biblioteca](https://media.licdn.com/dms/image/C4E22AQHcSRSwmXmBBw/feedshare-shrink_800/0/1676755433329?e=1681948800&v=beta&t=eCcaJAe1YdkN7Yzx_ziP7ehsoz3PhRsbSK0iKn44fIo)
+
 ## Topics
 - [Project Overview](#project-overview)
 - [MVP Features](#mvp-features)
