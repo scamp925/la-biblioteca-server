@@ -108,7 +108,7 @@ python manage.py runserver
 
 [GET Single Review of Book](/SingleBookReview.md)
 
-[POST Create Review of Book]()
+[POST Create Review of Book](/CreateReview.md)
 
 [PUT Update Review of Book]()
 
