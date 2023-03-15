@@ -96,7 +96,7 @@ python manage.py runserver
 
 [GET Single Book](/SingleUserBook.md)
 
-[POST Add Book to Shelf (CUSTOM ACTION)]()
+[POST Add Book to Shelf (CUSTOM ACTION)](/AddBookToShelf.md)
 
 [PUT Update Book's Shelf (CUSTOM ACTION)]()
 
