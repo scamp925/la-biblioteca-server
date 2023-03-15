@@ -92,7 +92,7 @@ python manage.py runserver
 ### Books
 [GET All Books](/AllBooks.md)
 
-[GET All User's Books]()
+[GET All User's Books](/AllUserBooks.md)
 
 [GET Single Book](/SingleUserBook.md)
 
