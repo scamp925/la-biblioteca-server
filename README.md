@@ -88,37 +88,39 @@ python manage.py runserver
 [Scroll to top](#la-biblioteca-server-side)
 
 ## Testing Endpoints with Postman
-<details>
-  <summary>Books</summary>
-  <ul>
-    <li>[GET All Books](/Endpoints/AllBooks.md)</li>
-    <li>GET All User's Books</li>
-    <li>GET Single Book</li>
-    <li>POST Add Book to Shelf (CUSTOM ACTION)</li>
-    <li>PUT Update Book's Shelf (CUSTOM ACTION)</li>
-    <li>DELETE Remove Book from Shelf (CUSTOM ACTION)</li>
-  </ul>
-</details>
 
-<details>
-  <summary>Reviews</summary>
-  <ul>
-    <li>GET All Reviews of Book</li>
-    <li>GET Single Review of Book</li>
-    <li>POST Create Review of Book</li>
-    <li>PUT Update Review of Book</li>
-    <li>DELETE Delete Single Review</li>
-    <li>POST Create Reaction for Review (CUSTOM ACTION)</li>
-    <li>DELETE Remove Reaction from Review (CUSTOM ACTION)</li>
-  </ul>
-</details>
+### Books
+[GET All Books](/AllBooks.md)
 
-<details>
-  <summary>Reactions</summary>
-  <ul>
-    <li>GET All Reactions</li>
-  </ul>
-</details>
+[GET All User's Books]()
+
+[GET Single Book]()
+
+[POST Add Book to Shelf (CUSTOM ACTION)]()
+
+[PUT Update Book's Shelf (CUSTOM ACTION)]()
+
+[DELETE Remove Book from Shelf (CUSTOM ACTION)]()
+
+### Reviews
+
+[GET All Reviews of Book]()
+
+[GET Single Review of Book]()
+
+[POST Create Review of Book]()
+
+[PUT Update Review of Book]()
+
+[DELETE Delete Single Review]()
+
+[POST Create Reaction for Review (CUSTOM ACTION)]()
+
+[DELETE Remove Reaction from Review (CUSTOM ACTION)]()
+
+### Reactions
+
+[GET All Review's Reactions]()
 
 ## Planning
 
