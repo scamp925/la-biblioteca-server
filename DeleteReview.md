@@ -2,7 +2,7 @@
 
 ### Endpoint
 
-*Note: The '12' in my endpoint and in the snippet from Postman was the id of the review I created with the [POST request](/CreateReview.md). Where I have '12', put the value of the id property of your newly created review.*
+*Note: The '12' in my endpoint and in the snippet from Postman was the id of the review I created with the [POST request](/CreateReview.md). Where I have '12', put the value of the id property of your newly created entry in Review table.*
 
 ```
 http://localhost:8000/reviews/12
