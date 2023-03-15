@@ -104,7 +104,7 @@ python manage.py runserver
 
 ### Reviews
 
-[GET All Reviews of Book]()
+[GET All Reviews of Book](/AllBookReviews.md)
 
 [GET Single Review of Book]()
 
