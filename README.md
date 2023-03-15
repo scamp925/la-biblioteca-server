@@ -110,7 +110,7 @@ python manage.py runserver
 
 [POST Create Review of Book](/CreateReview.md)
 
-[PUT Update Review of Book]()
+[PUT Update Review of Book](/UpdateReview.md)
 
 [DELETE Delete Single Review]()
 
