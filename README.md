@@ -8,9 +8,9 @@
 
 ## Topics
 - [Project Overview](#project-overview)
-- [Try La Biblioteca Out](#try-plated-out)
+- [Try La Biblioteca Out](#try-la-biblioteca-out)
 - [Testing Endpoints](#testing-endpoints-with-postman)
-- [Planning for La Biblioteca](#planning-for-plated)
+- [Planning for La Biblioteca](#planning)
 - [Tech Stacks for La Biblioteca](#tech-stacks)
 
 ## Project Overview
@@ -88,6 +88,8 @@ python manage.py runserver
 [Scroll to top](#la-biblioteca-server-side)
 
 ## Testing Endpoints with Postman
+
+MUST COMPLETE [Try La Biblioteca Out](#try-la-biblioteca-out) SECTION FIRST
 
 ### Books
 [GET All Books](/AllBooks.md)
