@@ -38,7 +38,3 @@ HTTP response status code: 200 OK
     }
 }
 ```
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

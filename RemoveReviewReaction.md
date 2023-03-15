@@ -30,7 +30,3 @@ After:
 
 ![database snippet of deleted entry](https://user-images.githubusercontent.com/98675776/225180953-2f963d6a-44eb-4941-a6b5-b09627423f46.png)
 </td></tr></table>
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

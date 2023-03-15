@@ -15,7 +15,3 @@ A list of all the reviews associated with the book with an ID of 17 in the datab
 *Snapshot cuts Postman response off, but the user's information is also listed in the response*
 
 ![Postman Response](https://user-images.githubusercontent.com/98675776/225178805-01bc3596-f493-408b-86fa-6200ccb31262.png)
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

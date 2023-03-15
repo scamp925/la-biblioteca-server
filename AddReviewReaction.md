@@ -24,7 +24,3 @@ A new entry in the ReviewReaction table:
 *Note: The id value for your newly created ReviewReaction will most likely differ from the one in the response snippet below*
 
 ![database snippet of added entry](https://user-images.githubusercontent.com/98675776/225180750-9c1b9350-972b-435d-af1e-2281e1959d5a.png)
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

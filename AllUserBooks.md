@@ -15,8 +15,3 @@ A list of 40 books with their details, but this time the property called "book_s
 *If book is not on user's bookshelves, then the "book_shelf" property's value will remain as an empty string*
 
 ![All Books Data](https://user-images.githubusercontent.com/98675776/225196428-95bf007a-3e0b-49dc-b88d-505c358b89ae.png)
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- renders all books on the homepage of the application once a user is logged in
-- the key to how the search bar filters the books on the page based on what the user inputs

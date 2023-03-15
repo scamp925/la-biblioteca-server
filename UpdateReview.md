@@ -32,6 +32,3 @@ After:
 </td></tr></table>
 
 Where the "content" was once empty, with the update, it is now filled with user's review
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

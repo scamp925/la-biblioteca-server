@@ -26,7 +26,3 @@ After:
 
 ![database snippet of deleted entry](https://user-images.githubusercontent.com/98675776/225180282-25d95e65-fe48-42a7-9b78-e530297a9780.png)
 </td></tr></table>
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

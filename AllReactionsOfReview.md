@@ -37,7 +37,3 @@ A list of all the reactions associated with single review with an id of 7
     }
 ]
 ```
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

@@ -28,7 +28,3 @@ After:
 
 ![database snippet of updating an entry](https://user-images.githubusercontent.com/98675776/225178385-bf46ee70-d43a-4e33-a219-2fd35a2f36f7.png)
 </td></tr></table>
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder

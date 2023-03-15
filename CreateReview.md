@@ -43,7 +43,3 @@ HTTP response status code: 201 CREATED
     }
 }
 ```
-
-### Usage in La Biblioteca's Client Side
-Fetch API with this endpoint
-- placeholder
