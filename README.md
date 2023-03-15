@@ -88,8 +88,8 @@ python manage.py runserver
 [Scroll to top](#la-biblioteca-server-side)
 
 ## Testing Endpoints with Postman
-
-MUST COMPLETE [Try La Biblioteca Out](#try-la-biblioteca-out) SECTION FIRST
+ ### WAIT!!!!!! 
+ YOU MUST COMPLETE [Try La Biblioteca Out](#try-la-biblioteca-out) SECTION FIRST
 
 ### Books
 [GET All Books](/AllBooks.md)
