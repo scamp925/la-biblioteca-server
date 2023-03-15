@@ -91,7 +91,7 @@ python manage.py runserver
 <details>
   <summary>Books</summary>
   <ul>
-    <li>GET All Books</li>
+    <li>[GET All Books](/Endpoints/AllBooks.md)</li>
     <li>GET All User's Books</li>
     <li>GET Single Book</li>
     <li>POST Add Book to Shelf (CUSTOM ACTION)</li>
