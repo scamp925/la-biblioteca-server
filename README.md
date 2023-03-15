@@ -106,7 +106,7 @@ python manage.py runserver
 
 [GET All Reviews of Book](/AllBookReviews.md)
 
-[GET Single Review of Book]()
+[GET Single Review of Book](/SingleBookReview.md)
 
 [POST Create Review of Book]()
 
