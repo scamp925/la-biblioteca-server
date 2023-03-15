@@ -21,6 +21,8 @@ HTTP response status code: 201 CREATED
 
 A new entry in the Bookshelf table:
 
+*Note: The id value for your newly created Bookshelf will most likely differ from the one in the response snippet below*
+
 ![database snippet of added entry](https://user-images.githubusercontent.com/98675776/225176953-f94c5366-6b43-4050-9ab6-628efea28195.png)
 
 ### Usage in La Biblioteca's Client Side

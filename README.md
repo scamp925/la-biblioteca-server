@@ -114,7 +114,7 @@ python manage.py runserver
 
 [DELETE Delete Single Review](/DeleteReview.md)
 
-[POST Create Reaction for Review (CUSTOM ACTION)]()
+[POST Create Reaction for Review (CUSTOM ACTION)](/AddReviewReaction.md)
 
 [DELETE Remove Reaction from Review (CUSTOM ACTION)]()
 
