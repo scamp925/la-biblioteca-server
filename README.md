@@ -122,6 +122,7 @@ python manage.py runserver
 
 [GET All Review's Reactions](/AllReactionsOfReview.md)
 
+[Scroll to top](#la-biblioteca-server-side)
 ## Planning
 
 #### La Biblioteca's MVP Wireframe
