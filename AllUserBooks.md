@@ -14,7 +14,7 @@ A list of 40 books with their details, but this time the property called "book_s
 
 *If book is not on user's bookshelves, then the "book_shelf" property's value will remain as an empty string*
 
-![All Books Data](https://user-images.githubusercontent.com/98675776/225172905-6e5b7dab-0d63-482e-b1de-1656e22ba82b.png)
+![All Books Data](https://user-images.githubusercontent.com/98675776/225196428-95bf007a-3e0b-49dc-b88d-505c358b89ae.png)
 
 ### Usage in La Biblioteca's Client Side
 Fetch API with this endpoint

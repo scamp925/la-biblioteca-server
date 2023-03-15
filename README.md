@@ -120,7 +120,7 @@ python manage.py runserver
 
 ### Reactions
 
-[GET All Review's Reactions]()
+[GET All Review's Reactions](/AllReactionsOfReview.md)
 
 ## Planning
 
