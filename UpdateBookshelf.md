@@ -6,7 +6,7 @@ http://localhost:8000/books/16/update_shelf?user=1
 
 Here's how your Postman should look for this request:
 
-![POST call](https://user-images.githubusercontent.com/98675776/225177763-b10d6303-2c2f-4cdf-9349-632c7608a451.png)
+![Postman setup for this call](https://user-images.githubusercontent.com/98675776/225177763-b10d6303-2c2f-4cdf-9349-632c7608a451.png)
 
 
 ### Postman Response

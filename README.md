@@ -98,9 +98,9 @@ python manage.py runserver
 
 [POST Add Book to Shelf (CUSTOM ACTION)](/AddBookToShelf.md)
 
-[PUT Update Book's Shelf (CUSTOM ACTION)]()
+[PUT Update Book's Shelf (CUSTOM ACTION)](/UpdateBookshelf.md)
 
-[DELETE Remove Book from Shelf (CUSTOM ACTION)]()
+[DELETE Remove Book from Shelf (CUSTOM ACTION)](/RemoveBookFromShelf.md)
 
 ### Reviews
 
