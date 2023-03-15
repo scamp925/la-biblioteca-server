@@ -112,7 +112,7 @@ python manage.py runserver
 
 [PUT Update Review of Book](/UpdateReview.md)
 
-[DELETE Delete Single Review]()
+[DELETE Delete Single Review](/DeleteReview.md)
 
 [POST Create Reaction for Review (CUSTOM ACTION)]()
 

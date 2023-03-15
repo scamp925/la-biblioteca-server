@@ -1,10 +1,12 @@
-# User Adds a Review to a Book in the Database
+# User Updates Book's Review in the Database
 
 ### Endpoint & Body
 
 *Note: The '12' in my endpoint and in the snippet from Postman was the id of the review I created with the [POST request](/CreateReview.md). Where I have '12', put the value of the id property of your newly created review.*
 
+```
 http://localhost:8000/reviews/12
+```
 
 Here's how your Postman should look for this request:
 
@@ -29,7 +31,7 @@ After:
 ![database snippet of updating an entry](https://user-images.githubusercontent.com/98675776/225180080-af226185-eeb0-4a27-b563-f32e780e7ce2.png)
 </td></tr></table>
 
-Where the 'content' was once empty, with the update, it is now filled with user's review
+Where the "content" was once empty, with the update, it is now filled with user's review
 ### Usage in La Biblioteca's Client Side
 Fetch API with this endpoint
 - placeholder

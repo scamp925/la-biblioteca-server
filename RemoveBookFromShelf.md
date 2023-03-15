@@ -2,7 +2,9 @@
 
 ### Endpoint & Body
 
+```
 http://localhost:8000/books/16/remove_from_shelf
+```
 
 Here's how your Postman should look for this request:
 

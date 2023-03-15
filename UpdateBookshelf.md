@@ -2,7 +2,9 @@
 
 ### Endpoint & Body
 
+```
 http://localhost:8000/books/16/update_shelf?user=1
+```
 
 Here's how your Postman should look for this request:
 
